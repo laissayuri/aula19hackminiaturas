@@ -8,7 +8,7 @@ const app = express();
 app.set("view engine", "ejs");
 app.use("/assets", express.static("static"));
 app.use(bodyParser.urlencoded());
-app.use(expressMongoDb("mongodb://localhost/miniaturas"));
+app.use(expressMongoDb("mongodb://laissayuru:290599l@ds239682.mlab.com:39682/miniaturas"));
 
 app.get("", (req, res) =>{ //request e response
     res.render("index"); // se for colocar com o html direto: res.send(`codigo do html`);
@@ -54,6 +54,6 @@ app.post('/admin/produtos/:id', (req, res) => {
     });
 });
 
-app.listen(3000, () => { // 3000 é porta para acessar o meu computador, que virou um servidor (ip:3000) (se eu for acessar o meu pc, localhost:3000)
+app.listen(process.env.PORT || 3000, () => { // 3000 é porta para acessar o meu computador, que virou um servidor (ip:3000) (se eu for acessar o meu pc, localhost:3000)
     console.log("Servidor Inicializado");
 });

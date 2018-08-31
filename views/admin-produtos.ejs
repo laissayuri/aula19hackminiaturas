@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('shared/head') %>
+<body>
+    <section>
+        <h2>Produtos</h2>
+
+        <a href="/admin/produtos/inserir">Inserir Produto</a>
+
+        <% for(let produto of produtos){ %>
+            <div>
+                <img src="/assets/<%= produto.imagem %>" alt="">
+                <h3><%= produto.produto %></h3>
+                <h3>Quantidade: <%= produto.quantidade %></h3>
+    
+                <form method="POST" action="/admin/produtos/<%= produto._id %>">
+                    <button>Deletar Produto</button>
+                </form>
+                    
+                <hr>    
+            </div>
+            
+        <% } %>
+    
+    </section>
+</body>
+</html>

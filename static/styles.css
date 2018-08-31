@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    background-color: #84c225;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img{
+    height: 100px;
+}
+
+nav a{
+    padding: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 15pt;
+}
+
+nav a:hover{
+    cursor: pointer;
+}
+
+footer{
+    background-color: #84c225;
+    padding: 30px;
+}
+
+.home .banner {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.home .banner h2{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #fff;
+    font-size: 30pt;
+    text-shadow: #000 1px 1px 10px;
+    width: 35%;
+    max-width: 100%;
+    line-height: 1.5;
+    z-index: 1;
+}
+
+.home .banner img{
+    width: 100%;
+}
+
+.contato h2, .produtos h2, .cadastro h2{ 
+    padding: 0 30px;
+    color: #fff;
+    font-size: 30pt;
+    text-shadow: #000 1px 1px 10px;
+    width: 35%;
+    max-width: 100%;
+    line-height: 1.5;
+    z-index: 1;
+}
+
+.produtos .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.produtos img{
+    padding: 30px;
+}
+
+.contato h3, .produtos h3, .cadastro h3{
+    padding: 0px 30px;
+}

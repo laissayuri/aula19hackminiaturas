@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+     <%-include("shared/head")%>
+<body>
+     <%-include("shared/header")%>
+
+     <section class="cadastro">
+        <h2> Cadastro de Produtos </h2>
+        
+        <h3><%= mensagem %></h3>
+
+        <a href="/admin/produtos">Ir para a página admin/produtos </a>
+
+        <form method="POST">
+            <input type="text" placeholder="produto" name="produto">
+            <input type="text" placeholder="imagem" name="imagem">
+            <input type="text" placeholder="quantidade" name="quantidade">
+                
+            <button>Cadastrar</button>
+        </form>
+     </section>
+
+     <%-include("shared/footer")%>
+</body>
+</html>

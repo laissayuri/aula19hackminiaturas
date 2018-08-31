@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+     <%-include("shared/head")%>
+<body>
+     <%-include("shared/header")%>
+
+     <section class="produtos">
+        <h2> Produtos </h2>
+        <div class="container">
+                <% for(let produto of produtos){ %>
+                    <div>
+                        <img src="/assets/<%= produto.imagem %>" alt="">
+                        <h3><%= produto.produto %></h3>
+                        <h3>Quantidade: <%= produto.quantidade %></h3>
+                    </div>
+                <% } %>
+                
+        </div>
+     </section>
+
+     <%-include("shared/footer")%>
+</body>
+</html>

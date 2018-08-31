@@ -8,7 +8,7 @@ const app = express();
 app.set("view engine", "ejs");
 app.use("/assets", express.static("static"));
 app.use(bodyParser.urlencoded());
-app.use(expressMongoDb("mongodb://laissayuru:290599l@ds239682.mlab.com:39682/miniaturas"));
+app.use(expressMongoDb("mongodb://laissayuri:290599l@ds239692.mlab.com:39692/miniaturas"));
 
 app.get("", (req, res) =>{ //request e response
     res.render("index"); // se for colocar com o html direto: res.send(`codigo do html`);

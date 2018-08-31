@@ -24,6 +24,10 @@ app.get('/produtos', (req, res) => {
     });
 });
 
+app.get("/admin", (req, res) => {
+    res.render("admin");
+});
+
 app.get('/admin/produtos', (req, res) => {
     req.db.collection('produtos').find().toArray((erro, dados) => {
         res.render('admin-produtos', {'produtos': dados});

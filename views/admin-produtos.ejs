@@ -2,10 +2,12 @@
 <html lang="en">
 <%- include('shared/head') %>
 <body>
-    <section>
-        <h2>Produtos</h2>
+    <%- include('shared/header-admin') %>
 
-        <a href="/admin/produtos/inserir">Inserir Produto</a>
+    <section class="admin-produtos">
+        <h2 class="titulo">Deletar Produtos</h2>
+
+        <a href="/admin/produtos/inserir" class="link">Inserir Produto</a>
 
         <% for(let produto of produtos){ %>
             <div>
@@ -17,7 +19,7 @@
                     <button>Deletar Produto</button>
                 </form>
                     
-                <hr>    
+                    <hr>    
             </div>
             
         <% } %>

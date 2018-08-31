@@ -2,14 +2,17 @@
 <html lang="en">
      <%-include("shared/head")%>
 <body>
-     <%-include("shared/header")%>
+    <%- include('shared/header-admin') %>
 
      <section class="cadastro">
-        <h2> Cadastro de Produtos </h2>
-        
+        <h2 class="titulo"> Cadastro de Produtos </h2>
+
         <h3><%= mensagem %></h3>
 
-        <a href="/admin/produtos">Ir para a página admin/produtos </a>
+        <p>
+            <a href="/admin/produtos" class="link">Ir para a página admin/produtos </a>
+        </p>
+        
 
         <form method="POST">
             <input type="text" placeholder="produto" name="produto">
